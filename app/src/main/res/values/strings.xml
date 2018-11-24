@@ -1,0 +1,71 @@
+<resources>
+
+    <!-- String resources for activity_main.xml -->
+    <string name="app_name">Warcraft Quiz</string>
+
+    <!-- Strings for logos in imageView contentDescription. -->
+    <string name="wow_bfa_logo">This is the logo for Blizzard Entertainment\'\s World of Warcraft: Battle for Azeroth</string>
+    <string name="alliance_logo">This is the logo for the Alliance faction in Blizzard Entertainment\'\s World of Warcraft: Battle for Azeroth</string>
+    <string name="horde_logo">This is the logo for the Horde faction in Blizzard Entertainment\'\s World of Warcraft: Battle for Azeroth</string>
+    <string name="blizzard_logo">This is the logo for Blizzard Entertainment</string>
+
+    <string name="disclaimer">All product and company names are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them.</string>
+
+    <string name="start_button">Start Quiz</string>
+
+    <string name="footer">Welcome to Warcraft Quiz!</string>
+
+    <!-- Strings for "Music" checkbox. -->
+    <string name="checkbox_checked">Music</string>
+    <string name="checkbox_unchecked">Music off</string>
+
+    <!-- String resources for activity_quiz.xml -->
+    <string name="good_luck">Good luck on the quiz!</string>
+
+    <!-- Strings for question numbers -->
+    <string name="question_one">Question 1: </string>
+    <string name="question_two">Question 2: </string>
+    <string name="question_three">Question 3: </string>
+    <string name="question_four">Question 4: </string>
+    <string name="question_five">Question 5: </string>
+
+    <string name="question_msg">What faction did the Nightborne side with?</string>
+
+    <!-- Strings for question one buttons -->
+    <!-- Answer to question one. -->
+    <string name="horde">Horde</string>
+    <!-- Answer to question two -->
+    <string name="alliance">Alliance</string>
+    <string name="booty_bay">Booty Bay</string>
+    <string name="kirin_tor">Kirin Tor</string>
+    <!-- Answer to question three. -->
+    <string name="arthas">Arthas</string>
+    <string name="ner_zhul">Ner\'zhul</string>
+    <string name="medivh">Medivh</string>
+    <string name="aegwynn">Aegwynn</string>
+    <string name="sargeras">Sargeras</string>
+    <string name="kil_jaeden">Kil\'Jaeden</string>
+    <string name="archimonde">Archimonde</string>
+    <!-- Answer to question four. -->
+    <string name="gul_dan">Gul\'dan</string>
+    <string name="aman_thul">Aman\'thul</string>
+    <string name="aggramar">Aggramar</string>
+    <!-- Answer to question five. -->
+    <string name="eonar">Eonar</string>
+    <string name="ysera">Ysera</string>
+
+    <!-- Strinss for footer buttons. -->
+    <string name="restart">Restart</string>
+    <string name="home">Home</string>
+    <string name="next">Next</string>
+
+    <!-- Strings for quiz summary. -->
+    <string name="quiz_summary">Quiz Summary</string>
+    <string name="answer_one">Question 1 Answer: Horde</string>
+    <string name="answer_two">Question 2 Answer: Alliance</string>
+    <string name="answer_three">Question 3 Answer: Arthas</string>
+    <string name="answer_four">Question 4 Answer: Gul\'dan</string>
+    <string name="answer_five">Question 5 Answer: Eonar</string>
+    <string name="footer2">How many did you get right?</string>
+</resources>
+

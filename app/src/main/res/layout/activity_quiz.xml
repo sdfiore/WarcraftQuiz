@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4e342e"
+        tools:context="com.example.cat_bat.warcraftquiz.MainActivity">
+
+
+        <!-- View for question number text view. -->
+        <TextView
+            android:id="@+id/question_number_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:text="@string/question_one"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+
+        <!-- View for question message text view. -->
+        <TextView
+            android:id="@+id/question_msg_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question_number_text_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+            android:text="@string/question_msg"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/answer_one_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question_number_text_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/answer_two_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/answer_one_text_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/answer_three_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/answer_two_text_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/answer_four_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/answer_three_text_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/answer_five_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/answer_four_text_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/footer2_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/answer_five_text_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="44dp"
+            android:fontFamily="@font/acme"
+            android:gravity="center"
+            android:textColor="#f2e12e"
+            android:textSize="30sp" />
+
+        <!-- View for top-left button. -->
+        <Button
+            android:id="@+id/button"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:background="#102027"
+            android:text="@string/alliance"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <!-- View for top-right button. -->
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:background="#102027"
+            android:text="@string/horde"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <!-- View for bottom-left button. -->
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/button"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:background="#102027"
+            android:text="@string/booty_bay"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <!-- View for bottom-right button. -->
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/button"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="32dp"
+            android:background="#102027"
+            android:text="@string/kirin_tor"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <!-- View for "Restart" button. -->
+        <Button
+            android:id="@+id/restart_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/home_button"
+            android:layout_alignBottom="@+id/home_button"
+            android:layout_alignLeft="@+id/button3"
+            android:layout_alignStart="@+id/button3"
+            android:background="#102027"
+            android:onClick="restartQuiz"
+            android:text="@string/restart"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+        <!-- View for "Home" button. -->
+        <Button
+            android:id="@+id/home_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:background="#102027"
+            android:onClick="homeActivity"
+            android:text="@string/home"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+        <!-- View for "Next" button. -->
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/home_button"
+            android:layout_alignBottom="@+id/home_button"
+            android:layout_alignEnd="@+id/button4"
+            android:layout_alignRight="@+id/button4"
+            android:background="#102027"
+            android:onClick="nextQuestion"
+            android:text="@string/next"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4e342e"
+        tools:context="com.example.cat_bat.warcraftquiz.MainActivity">
+
+        <!-- View for World of Warcraft: Battle for Azeroth logo. -->
+        <ImageView
+            android:id="@+id/WoW_BFA_logo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/wow_bfa_logo"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:src="@drawable/wow_battle_for_azeroth_logo" />
+
+        <!-- View for disclaimer. -->
+        <TextView
+            android:id="@+id/disclaimer_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/disclaimer"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <!-- View for Alliance logo to the left of button. -->
+        <ImageView
+            android:id="@+id/Alliance_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/footer_text_view"
+            android:layout_toLeftOf="@+id/WoW_BFA_logo"
+            android:layout_toStartOf="@+id/WoW_BFA_logo"
+            android:contentDescription="@string/alliance_logo"
+            android:src="@drawable/mini_alliance_logo" />
+
+        <!-- View for Horde logo to the right of button. -->
+        <ImageView
+            android:id="@+id/Horde_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/footer_text_view"
+            android:layout_toEndOf="@+id/WoW_BFA_logo"
+            android:layout_toRightOf="@+id/WoW_BFA_logo"
+            android:contentDescription="@string/horde_logo"
+            android:src="@drawable/mini_horde_logo" />
+
+        <!-- View for "Start Quiz" button; used to change activities. -->
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/footer_text_view"
+            android:layout_centerHorizontal="true"
+            android:background="#102027"
+            android:onClick="startQuiz"
+            android:text="@string/start_button"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <!-- View for welcoming the user. -->
+        <TextView
+            android:id="@+id/footer_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/acme"
+            android:gravity="center"
+            android:paddingBottom="50dp"
+            android:text="@string/footer"
+            android:textColor="#f2e12e"
+            android:textSize="30sp" />
+
+        <!-- View for Blizzard Entertainment logo. -->
+        <ImageView
+            android:id="@+id/Blizzard_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/start_button"
+            android:layout_alignStart="@+id/start_button"
+            android:layout_below="@+id/start_button"
+            android:layout_marginTop="70dp"
+            android:contentDescription="@string/blizzard_logo"
+            android:src="@drawable/blizzard_logo" />
+
+        <!-- View for "Music" checkbox. -->
+        <CheckBox
+            android:id="@+id/music_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Horde_logo"
+            android:layout_alignStart="@+id/Horde_logo"
+            android:layout_alignTop="@+id/Blizzard_logo"
+            android:checked="true"
+            android:text="@string/checkbox_checked"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+
+</ScrollView>
+
